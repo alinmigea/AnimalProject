@@ -22,12 +22,12 @@ class UserServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        foreach (get_class_methods(new UserPolicy()) as $method)
-        {
-            $gate->define($method, "AnimalProject\\Modules\\User\\Policies\\UserPolicy@{$method}");
-        }
-
-        $gate->policy(User::class, UserPolicy::class);
+//        foreach (get_class_methods(new UserPolicy()) as $method)
+//        {
+//            $gate->define($method, "AnimalProject\\Modules\\User\\Policies\\UserPolicy@{$method}");
+//        }
+//
+//        $gate->policy(User::class, UserPolicy::class);
     }
 
     /**

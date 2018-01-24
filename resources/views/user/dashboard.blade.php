@@ -40,7 +40,7 @@
                 </div>
             </div>
 
-            <a href="/user/create" class="btn btn-success">Add User</a>
+            <a href="/users/create" class="btn btn-success">Add User</a>
         </div>
     </div>
 </div>

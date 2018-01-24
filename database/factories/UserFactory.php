@@ -1,6 +1,7 @@
 <?php
 
 use Faker\Generator as Faker;
+use AnimalProject\Modules\User\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +14,7 @@ use Faker\Generator as Faker;
 |
 */
 
-$factory->define(\AnimalProject\Modules\User\Models\User::class, function (Faker $faker) {
+$factory->define(User::class, function (Faker $faker) {
     return [
         'name' => $faker->name,
         'email' => $faker->unique()->safeEmail,
